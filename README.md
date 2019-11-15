@@ -16,7 +16,7 @@
 
 ## Win/OSX:
 
-Baja e instala los [drivers para conexion USB](/drivers) de CH340. (Los tienes ya de otro taller? no hace falta instalarlos otra vez)
+Baja e instala los [drivers](/drivers) para conexion por USB usando el chip [CH341](https://www.rubinolab.com/clone-arduino-driver-chip-ch340-ch340g-ch341/). Los tienes ya de otro taller? no hace falta instalarlos otra vez.
 
 Instala el [IDE de Arduino](https://www.arduino.cc/en/main/software) si no lo has hecho ya.
 
