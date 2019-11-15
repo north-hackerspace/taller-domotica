@@ -30,9 +30,9 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 
 ![img/boardmanager.png](img/boardmanager.png)
 
-![img/esp8266.board.png](imb/esp8266.board.png)
+![img/esp8266.board.png](img/esp8266.board.png)
 
-![img/nodemcu.v.1.0.png](nodemcu.v.1.0.png)
+![img/nodemcu.v.1.0.png](img/nodemcu.v.1.0.png)
 
 # Desafio 1: Como controlar los pines.
 
