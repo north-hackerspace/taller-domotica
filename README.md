@@ -20,7 +20,7 @@ Si tienes Windows o Max OSC baja e instala los [drivers](/drivers) para conexion
 
 Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la mayoria de las distribuciones linux.
 
-## Anadir la placa ESP8266 al IDE de Arduino
+## Anadir la placa ESP8266 al Arduino IDE
 
 1. Herramientas > Placa > Gestor de tarjetas...
 2. Buscar "esp8266" y elegir "esp8266 by ESP8266 Community"
@@ -28,7 +28,7 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 4. Herramientas > Placa .. > "NodeMCU v1.0 (ESP-12E Module)"
 5. Herramientas > Puerto > (lo que aparezca, por ejemplo COM5)
 
-![img/boardmanager.png](img/boardmanager.png)
+![img/board.manager.png](img/board.manager.png)
 
 ![img/esp8266.board.png](img/esp8266.board.png)
 
