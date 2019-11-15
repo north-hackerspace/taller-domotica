@@ -11,3 +11,14 @@
 - [4.5V AAA Battery Case](https://es.aliexpress.com/item/32788925539.html?spm=a2g0o.productlist.0.0.72de6097ZVvz3G)
 - [AAA Batteries](https://www.amazon.es/AmazonBasics-Pilas-alcalinas-industrial-unidades/dp/B07MLDJF3B)
 - [5V Relay](https://es.aliexpress.com/item/32787576149.html?spm=a2g0o.productlist.0.0.550d43e1WM2Jas)
+
+# Desafio 1: Como controlar los pines.
+
+# Desafio 2: Conectar el ESP8266 a nuestro Wi-Fi.
+
+# Desafio 3: Encender y apagar un LED desde el móvil con MQTT.
+
+# Desafio 4: Saber el estado de un sensor en tu dispositivo desde cualquier lugar.
+
+# Desafio 5: Encender y apagar un relé de alta potencia a través de internet.
+
