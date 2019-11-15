@@ -1,3 +1,5 @@
+![img/domotica.jpg](img/domotica.jpg)
+
 # Kit de Taller
 
 - [ESP8266 NodeMCU v3](https://es.aliexpress.com/item/32965623530.html?spm=a2g0s.9042311.0.0.465063c0ZkESIK)
