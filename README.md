@@ -22,11 +22,19 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 
 # Desafio 1: Como controlar los pines.
 
+![img/desafio1.png](img/desafio1.png)
+
 # Desafio 2: Conectar el ESP8266 a nuestro Wi-Fi.
 
 # Desafio 3: Encender y apagar un LED desde el móvil con MQTT.
 
+![img/desafio1.png](img/desafio1.png)
+
 # Desafio 4: Saber el estado de un sensor en tu dispositivo desde cualquier lugar.
 
+![img/desafio4.png](img/desafio4.png)
+
 # Desafio 5: Encender y apagar un relé de alta potencia a través de internet.
+
+![img/desafio5.png](img/desafio5.png)
 
