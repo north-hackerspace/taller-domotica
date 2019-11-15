@@ -12,6 +12,14 @@
 - [AAA Batteries](https://www.amazon.es/AmazonBasics-Pilas-alcalinas-industrial-unidades/dp/B07MLDJF3B)
 - [5V Relay](https://es.aliexpress.com/item/32787576149.html?spm=a2g0o.productlist.0.0.550d43e1WM2Jas)
 
+# Instalacion
+
+## Win/OSX:
+
+Baja e instala los [drivers para conexion USB](/drivers) de CH340. (Los tienes ya de otro taller? no hace falta instalarlos otra vez)
+
+Instala el [IDE de Arduino](https://www.arduino.cc/en/main/software) si no lo has hecho ya.
+
 # Desafio 1: Como controlar los pines.
 
 # Desafio 2: Conectar el ESP8266 a nuestro Wi-Fi.
