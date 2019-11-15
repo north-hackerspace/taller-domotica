@@ -20,7 +20,7 @@ Si tienes Windows o Max OSC baja e instala los [drivers](/drivers) para conexion
 
 Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la mayoria de las distribuciones linux.
 
-## Anadir la placa 8266 al IDE de Arduino
+## Anadir la placa ESP8266 al IDE de Arduino
 
 1. Herramientas > Placa > Gestor de tarjetas...
 2. Buscar "esp8266" y elegir "esp8266 by ESP8266 Community"
