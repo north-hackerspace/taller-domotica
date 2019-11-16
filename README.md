@@ -22,6 +22,7 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 
 ## Anadir la placa ESP8266 al Arduino IDE
 
+0. Archivo > Preferencias > Gestor de URLs de Tarjetas > http://arduino.esp8266.com/stable/package_esp8266com_index.json,https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json
 1. Herramientas > Placa > Gestor de tarjetas...
 2. Buscar "esp8266" y elegir "esp8266 by ESP8266 Community"
 3. Instalar
