@@ -92,7 +92,8 @@ void reconnect() {
     if (client.connect(clientId.c_str())) {
       Serial.println("connected");
       // Once connected, publish an announcement...
-      client.publish("/north-hackerspace/messages", clientId + " connecting to MQTT...");
+      String message = clientId + " connecting to MQTT...";
+      client.publish("/north-hackerspace/messages", message.c_str());
       // ... and resubscribe
       client.subscribe("/north-hackerspace/onOff");
     } else {
@@ -126,7 +127,7 @@ void loop() {
   if (now - lastMsg > 5000) {
     lastMsg = now;
     ++value;
-    snprintf (msg, 50, "%s is connected #%ld", clientId, value);
+    snprintf (msg, 50, "%s ping #%ld", clientId.c_str(), value);
     Serial.print("Publish message: ");
     Serial.println(msg);
     client.publish("/north-hackerspace/messages", msg);

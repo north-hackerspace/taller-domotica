@@ -1,26 +1,6 @@
 /*
  Basic ESP8266 MQTT example
 
- This sketch demonstrates the capabilities of the pubsub library in combination
- with the ESP8266 board/library.
-
- It connects to an MQTT server then:
-  - publishes "hello world" to the topic "outTopic" every two seconds
-  - subscribes to the topic "inTopic", printing out any messages
-    it receives. NB - it assumes the received payloads are strings not binary
-  - If the first character of the topic "inTopic" is an 1, switch ON the ESP Led,
-    else switch it off
-
- It will reconnect to the server if the connection is lost using a blocking
- reconnect function. See the 'mqtt_reconnect_nonblocking' example for how to
- achieve the same result without blocking the main loop.
-
- To install the ESP8266 board, (using Arduino 1.6.4+):
-  - Add the following 3rd party board manager under "File -> Preferences -> Additional Boards Manager URLs":
-       http://arduino.esp8266.com/stable/package_esp8266com_index.json
-  - Open the "Tools -> Board -> Board Manager" and click install for the ESP8266"
-  - Select your ESP8266 in "Tools -> Board"
-
 */
 
 #include <ESP8266WiFi.h>
@@ -39,8 +19,7 @@ char msg[50];
 int value = 0;
 
 // Create a random client ID
-String clientId = "ESP8266Client-";
-clientId += String(random(0xffff), HEX);
+String clientId = "";
 
 void setup_wifi() {
 
@@ -75,10 +54,12 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.println();
 
   // Switch on the LED if an 1 was received as first character
-  if ((char)payload[0] == '1') {
-    digitalWrite(D8, HIGH);   
-  } else {
-    digitalWrite(D8, LOW);  // Turn the LED off by making the voltage HIGH
+  if (topic == "/north-hackerspace/onOff") {
+    if ((char)payload[0] == '1') {
+      digitalWrite(D8, HIGH);   
+    } else {
+      digitalWrite(D8, LOW);  // Turn the LED off by making the voltage HIGH
+    }
   }
 
 }
@@ -91,7 +72,8 @@ void reconnect() {
     if (client.connect(clientId.c_str())) {
       Serial.println("connected");
       // Once connected, publish an announcement...
-      client.publish("/north-hackerspace/messages", "connection from " + clientId);
+      String message = clientId + " connecting to MQTT...";
+      client.publish("/north-hackerspace/messages", message.c_str());
       // ... and resubscribe
       client.subscribe("/north-hackerspace/onOff");
     } else {
@@ -105,9 +87,10 @@ void reconnect() {
 }
 
 void setup() {
-  pinMode(BUILTIN_LED, OUTPUT);     // Initialize the BUILTIN_LED pin as an output
+  pinMode(D8, OUTPUT);     // Initialize the D8 pin as an output
   Serial.begin(115200);
   setup_wifi();
+  clientId = "ESP8266Client-" + String(random(0xffff), HEX);
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
 }
@@ -120,12 +103,12 @@ void loop() {
   client.loop();
 
   long now = millis();
-  if (now - lastMsg > 2000) {
+  if (now - lastMsg > 5000) {
     lastMsg = now;
     ++value;
-    snprintf (msg, 50, "%s ping #%ld", clientId, value);
+    snprintf (msg, 50, "%s ping #%ld", clientId.c_str(), value);
     Serial.print("Publish message: ");
     Serial.println(msg);
-    client.publish("outTopic", msg);
+    client.publish("/north-hackerspace/messages", msg);
   }
 }
