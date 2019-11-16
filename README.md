@@ -52,3 +52,7 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 
 ![img/desafio5.png](img/desafio5.png)
 
+# Completo: Un dispositivo que notifica sensor de presencia, y se puede usar para encender y apagar la luz
+
+![img/completo.png](img/completo.png)
+
