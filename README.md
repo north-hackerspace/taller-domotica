@@ -26,7 +26,7 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 1. Herramientas > Placa > Gestor de tarjetas...
 2. Buscar "esp8266" y elegir "esp8266 by ESP8266 Community"
 3. Instalar
-4. Herramientas > Placa .. > "NodeMCU v1.0 (ESP-12E Module)"
+4. Herramientas > Placa .. > "NodeMCU v1.0 (ESP-12E Module)" (o el módulo en particular que uses).
 5. Herramientas > Puerto > (lo que aparezca, por ejemplo COM5)
 
 ![img/board.manager.png](img/board.manager.png)
