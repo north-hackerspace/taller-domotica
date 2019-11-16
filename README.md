@@ -56,3 +56,7 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 
 ![img/completo.png](img/completo.png)
 
+# Como preparar cables:
+
+![img/pelar.cables.jpg](img/pelar.cables.jpg)
+
