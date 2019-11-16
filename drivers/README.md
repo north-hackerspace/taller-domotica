@@ -1,3 +1,5 @@
+![../img/ch340.png](../img/ch340.png)
+
 El chip CH340/CH341 es un chip chino barato que traduce el UART (que es el protocolo para programar dispositivos) 
 en protocolo de USB (que es la forma mas facil de acceder a las placas desde el ordenador).
 
