@@ -40,6 +40,8 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 
 # Desafio 2: Conectar el ESP8266 a nuestro Wi-Fi.
 
+![img/hello.server.png](img/hello.server.png)
+
 # Desafio 3: Encender y apagar un LED desde el móvil con MQTT.
 
 ![img/desafio1.png](img/desafio1.png)
