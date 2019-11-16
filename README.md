@@ -38,6 +38,8 @@ Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la m
 
 ![img/desafio1.png](img/desafio1.png)
 
+### Código 
+
 ```cpp
 /*
   Blink
@@ -70,7 +72,7 @@ void loop() {
 
 ![img/webserver.png](img/webserver.png)
 
-Quieres ver el codigo? Aqui lo tienes.
+### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio2/Desafio2.ino
 
@@ -78,7 +80,7 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/desafio1.png](img/desafio1.png)
 
-Quieres ver el codigo? Aqui lo tienes.
+### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio3/Desafio3.ino
 
@@ -86,7 +88,7 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/desafio4.png](img/desafio4.png)
 
-Quieres ver el codigo? Aqui lo tienes.
+### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio4/Desafio4.ino
 
@@ -94,7 +96,7 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/desafio5.png](img/desafio5.png)
 
-Quieres ver el codigo? Aqui lo tienes.
+### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio5/Desafio5.ino
 
@@ -102,7 +104,7 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/completo.png](img/completo.png)
 
-### Codigo 
+### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Completo/Completo.ino
 
