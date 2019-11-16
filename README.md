@@ -102,6 +102,10 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/completo.png](img/completo.png)
 
+### Codigo 
+
+https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Completo/Completo.ino
+
 # Como preparar cables:
 
 ![img/pelar.cables.jpg](img/pelar.cables.jpg)
