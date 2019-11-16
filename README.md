@@ -16,7 +16,7 @@
 
 Instala el [IDE de Arduino](https://www.arduino.cc/en/main/software) si no lo has hecho ya.
 
-Si tienes Windows o Max OSC baja e instala los [drivers](/drivers) para conexion por USB usando el chip [CH341](https://www.rubinolab.com/clone-arduino-driver-chip-ch340-ch340g-ch341/). Ya tienes los drivers de otro taller? no hace falta instalarlos otra vez.
+Si tienes Windows o Max OSC baja e instala los [drivers](/drivers) para conexion por USB usando el chip [CH340](https://www.rubinolab.com/clone-arduino-driver-chip-ch340-ch340g-ch341/). Ya tienes los drivers de otro taller? no hace falta instalarlos otra vez.
 
 Si tienes Linux no hace falta instalar los drivers, ya viene instalados con la mayoria de las distribuciones linux.
 
