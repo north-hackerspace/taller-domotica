@@ -64,6 +64,12 @@ void loop() {
 
 ![img/hello.server.png](img/hello.server.png)
 
+![img/serial.monitor.png](img/serial.monitor.png)
+
+![img/serial.monitor.popup.png](img/serial.monitor.popup.png)
+
+![img/webserver.png](img/webserver.png)
+
 # Desafio 3: Encender y apagar un LED desde el móvil con MQTT.
 
 ![img/desafio1.png](img/desafio1.png)
