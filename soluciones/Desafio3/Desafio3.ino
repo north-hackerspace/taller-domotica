@@ -54,7 +54,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.println();
 
   // Switch on the LED if an 1 was received as first character
-  if (topic == "/north-hackerspace/onOff") {
+  if ((String(topic) == "/north-hackerspace/onOff") {
     if ((char)payload[0] == '1') {
       digitalWrite(D8, HIGH);   
     } else {
@@ -88,6 +88,7 @@ void reconnect() {
 
 void setup() {
   pinMode(D8, OUTPUT);     // Initialize the D8 pin as an output
+  pinMode(D8, HIGH);
   Serial.begin(115200);
   setup_wifi();
   clientId = "ESP8266Client-" + String(random(0xffff), HEX);
