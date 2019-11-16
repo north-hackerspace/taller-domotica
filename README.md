@@ -87,6 +87,8 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/desafio1.png](img/desafio1.png)
 
+![img/mqtt.dash.png](img/mqtt.dash.png)
+
 ### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio3/Desafio3.ino
