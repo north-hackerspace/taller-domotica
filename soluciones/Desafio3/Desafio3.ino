@@ -54,7 +54,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.println();
 
   // Switch on the LED if an 1 was received as first character
-  if ((String(topic) == "/north-hackerspace/onOff") {
+  if (String(topic) == "/north-hackerspace/onOff") {
     if ((char)payload[0] == '1') {
       digitalWrite(D8, HIGH);   
     } else {
