@@ -70,17 +70,33 @@ void loop() {
 
 ![img/webserver.png](img/webserver.png)
 
+Quieres ver el codigo? Aqui lo tienes.
+
+https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio2/Desafio2.ino
+
 # Desafio 3: Encender y apagar un LED desde el móvil con MQTT.
 
 ![img/desafio1.png](img/desafio1.png)
+
+Quieres ver el codigo? Aqui lo tienes.
+
+https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio3/Desafio3.ino
 
 # Desafio 4: Saber el estado de un sensor en tu dispositivo desde cualquier lugar.
 
 ![img/desafio4.png](img/desafio4.png)
 
+Quieres ver el codigo? Aqui lo tienes.
+
+https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio4/Desafio4.ino
+
 # Desafio 5: Encender y apagar un relé de alta potencia a través de internet.
 
 ![img/desafio5.png](img/desafio5.png)
+
+Quieres ver el codigo? Aqui lo tienes.
+
+https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio5/Desafio5.ino
 
 # Completo: Un dispositivo que notifica sensor de presencia, y se puede usar para encender y apagar la luz
 
