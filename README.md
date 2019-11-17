@@ -97,6 +97,47 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/desafio4.png](img/desafio4.png)
 
+Vamos a usar el sensor de movimiento HC-SR501, [aqui teneis mas informacion sobre el modulo](https://lastminuteengineers.com/pir-sensor-arduino-tutorial/).
+
+A efectos practicos, lo que queremos es leer el movimiento con la funcion `digitalRead(pin)` de Arduino (si hay = 1, si no hay = 0) y encender un led de indicador. A la vez vamos a mandar este valor por un canal de MQTT llamada `/hackerspace/sensor`:
+
+```cpp
+// Lineas 100 en adelante
+
+void loop() {
+
+  if (!client.connected()) {
+    reconnect();
+  }
+  client.loop();
+
+  long now = millis();
+  // Cada medio segundo mirar el sensor de movimiento
+  if (now - lastMsg > 500) {
+    int sensorVal = digitalRead(D2);
+    // Ha cambiado el sensor?
+    if (sensorVal != lastSensorVal) {
+      Serial.print("The Sensor is: ");
+      Serial.println(sensorVal);
+      snprintf (msg, 50, "%ld", sensorVal);
+      client.publish("/north-hackerspace/sensor", msg);
+      lastSensorVal = sensorVal;
+      digitalWrite(D6, sensorVal);
+    }
+  }
+  // Cada 5 segundos mandar mensaje por MQTT
+  if (now - lastMsg > 5000) {
+    lastMsg = now;
+    ++value;
+    snprintf (msg, 50, "Hello #%ld", value);
+    Serial.print("Publish message: ");
+    Serial.println(msg);
+    client.publish("/north-hackerspace/messages", msg);
+  }
+}
+
+```
+
 ### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio4/Desafio4.ino
