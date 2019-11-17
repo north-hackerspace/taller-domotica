@@ -95,6 +95,8 @@ https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=en
 
 Aqui podremos leer mensajes del canal de mensajes y encender y apagar el LED con el movil.
 
+![img/connection.png](img/connection.png)
+
 ### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio3/Desafio3.ino
