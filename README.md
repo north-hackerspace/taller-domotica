@@ -140,6 +140,8 @@ void loop() {
 
 ```
 
+![img/movement.png](img/movement.png)
+
 ### Código 
 
 https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desafio4/Desafio4.ino
