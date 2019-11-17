@@ -87,7 +87,13 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 ![img/desafio1.png](img/desafio1.png)
 
+### Instalar MQTT Dash (Android)
+
 ![img/mqtt.dash.png](img/mqtt.dash.png)
+
+https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=en
+
+Aqui podremos leer mensajes del canal de mensajes y encender y apagar el LED con el movil.
 
 ### Código 
 
