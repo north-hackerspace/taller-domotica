@@ -99,7 +99,9 @@ https://github.com/north-hackerspace/taller-domotica/blob/master/soluciones/Desa
 
 Vamos a usar el sensor de movimiento HC-SR501, [aqui teneis mas informacion sobre el modulo](https://lastminuteengineers.com/pir-sensor-arduino-tutorial/).
 
-A efectos practicos, lo que queremos es leer el movimiento con la funcion `digitalRead(D2)` de Arduino (si hay movimient es `1`, si no es `0`) y encender un LED de indicador amarillo en el pin D6. A la vez vamos a mandar este valor por un canal de MQTT usando el topic  `/hackerspace/sensor`:
+A efectos practicos, lo que queremos es leer el movimiento con la funcion `digitalRead(D2)` de Arduino (si hay movimiento es `1`, si no es `0`) y encender un LED de indicador amarillo en el pin D6. 
+
+A la vez vamos a mandar este valor por un canal de MQTT usando el topic  `/hackerspace/sensor`:
 
 ```cpp
 // Lineas 100 en adelante
