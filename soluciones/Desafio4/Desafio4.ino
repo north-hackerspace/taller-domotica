@@ -95,6 +95,8 @@ void setup() {
   client.setCallback(callback);
 }
 
+int lastSensorVal = 0;
+
 void loop() {
 
   if (!client.connected()) {
@@ -106,17 +108,21 @@ void loop() {
   // Cada medio segundo mirar el sensor de movimiento
   if (now - lastMsg > 500) {
     int sensorVal = digitalRead(D2);
-    Serial.print("The Sensor is: ");
-    Serial.println(sensorVal);
-    snprintf (msg, 50, "%ld", sensorVal);
-    client.publish("/north-hackerspace/sensor", msg);
-    digitalWrite(D6, sensorVal);
+    // Ha cambiado el sensor?
+    if (sensorVal != lastSensorVal) {
+      Serial.print("The Sensor is: ");
+      Serial.println(sensorVal);
+      snprintf (msg, 50, "%ld", sensorVal);
+      client.publish("/north-hackerspace/sensor", msg);
+      lastSensorVal = sensorVal;
+      digitalWrite(D6, sensorVal);
+    }
   }
   // Cada 5 segundos mandar mensaje por MQTT
   if (now - lastMsg > 5000) {
     lastMsg = now;
     ++value;
-    snprintf (msg, 50, "hello world #%ld", value);
+    snprintf (msg, 50, "Hello #%ld", value);
     Serial.print("Publish message: ");
     Serial.println(msg);
     client.publish("/north-hackerspace/messages", msg);
